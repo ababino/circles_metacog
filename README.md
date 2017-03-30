@@ -16,7 +16,7 @@ We have made this modification to the original version in order to achieve a bet
 
 In order to use this task you must have the PsychoPy (a platform-independent experimental control system written in the Python interpreted language which uses entirely free libraries) already installed. If you don't have it please go to the [installation page] (http://www.psychopy.org/installation.html) and follow the instructions.
 
-First, you have to download the circles.psyexp file.
+First, you have to download this repository and unzip it some where on your pc.
 You can also clone this repo, if you find that useful.
 
 Once you have the PsychoPy installed, run PsychoPy and open the circles.psyexp file.
@@ -42,16 +42,29 @@ Choices were rewarded with a payoff scheme, such that the task amounted to a wag
 ### Example
 
 If you want to run an experiment with the following configuration of trials:
+
+```
 10 plain
 10 wage
 10 slider
 1 plaineasy
 1 plainhard
+```
 
-you will have to go to the settings component (just click on it) and rewrite the second line multiplying each type of trial with the number of trials decided.
+you will have to go to the settings component (click on it) and rewrite each line with the number of trials decided.
+
+![settings]("https://github.com/ababino/circles_metacog/images/settings1.png")
 
 ```
-trial_types = 10 * ['wage'] + 10 * ['slider'] + 10 * ['plain'] + ['plaineasy'] + ['plainhard']
+wager = 10
+slider = 10
+plain = 10
+wagereasy = 0
+wagerhard = 0
+slidereasy = 0
+sliderhard = 0
+plaineasy = 1
+plainhard = 1
 ```
 
 Levels
@@ -74,3 +87,10 @@ If you want NO LEVEL STRUCTURE, set as many point as the number of wage trials t
 ```
 points_to_pass_level = 30
 ```
+
+Treatments
+
+Likely, you will want to run the experiemnt in different treatment conditions.
+Logging this changes into the data files makes easier the posterior analysis, that is why we add this variable inside the settings components.
+In this way you will be able to give a name to each tratment with out showing it to the subjects.
+Treatments could be 'Control' or 'Adults' or any string.
