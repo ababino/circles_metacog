@@ -53,7 +53,7 @@ If you want to run an experiment with the following configuration of trials:
 
 you will have to go to the settings component (click on it) and rewrite each line with the number of trials decided.
 
-![settings]("https://raw.githubusercontent.com/ababino/circles_metacog/master/images/settings1.png")
+![settings](https://github.com/ababino/circles_metacog/blob/master/images/settings1.png)
 
 ```
 wager = 10
