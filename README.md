@@ -18,7 +18,6 @@ In order to use this task you must have the PsychoPy (a platform-independent exp
 
 First, you have to download this repository and unzip it some where on your pc.
 You can also clone this repo, if you find that useful.
-![button](https://github.com/ababino/circles_metacog/blob/master/images/download_button.png)
 
 
 Once you have the PsychoPy installed, run PsychoPy and open the circles.psyexp file.
