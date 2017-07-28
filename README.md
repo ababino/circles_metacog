@@ -7,7 +7,7 @@ the type II task which involves a conﬁdence judgment produced by the participa
 If you use it pleas cite [1].
 
 The main difference with the original experiment is that in this new and improved version, we use a Staircase procedure instead of a Quest one.
-We have made this modification to the original version in order to achieve a better fix in the performance.
+We have made this modification to the original version in order to achieve a more satable level of performance. The default parameters of the Staircase are nUp=1 and nDown=3 which yields a 0.82 average value of performance.
 
 [1] Salles, A., Ais, J., Semelman, M., Sigman, M., & Calero, C. I. (2016). The metacognitive abilities of children and adults. Cognitive Development, 40, 101-110.
 
