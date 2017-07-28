@@ -1,0 +1,6 @@
+*.pyc
+*.csv
+*.log
+*.psydat
+*_lastrun*
+.ipynb_checkpoints/*
