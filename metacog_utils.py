@@ -11,12 +11,12 @@ def add_sdt_utils(df, confidence_col='Wager', response_col='Response'):
     """It sdds signal detection theory usful measures."""
     ind = df[confidence_col].map(lambda x: x is not np.nan)
     conf = df.loc[ind, confidence_col].astype(bool)
-    df.loc[ind, 'hit'] = df.loc[ind, response_col] & conf
-    df.loc[ind, 'fa'] = ~df.loc[ind, response_col] & conf
-    df.loc[ind, 'miss'] = df.loc[ind, response_col] & ~conf
-    df.loc[ind, 'cr'] = ~df.loc[ind, response_col] & ~conf
-    df.loc[ind, 'right'] = df.loc[ind, response_col]
-    df.loc[ind, 'wrong'] = ~df.loc[ind, response_col]
+    df.loc[ind, 'hit'] = df.loc[ind, response_col].astype(bool) & conf
+    df.loc[ind, 'fa'] = ~df.loc[ind, response_col].astype(bool) & conf
+    df.loc[ind, 'miss'] = df.loc[ind, response_col].astype(bool) & ~conf
+    df.loc[ind, 'cr'] = ~df.loc[ind, response_col].astype(bool) & ~conf
+    df.loc[ind, 'right'] = df.loc[ind, response_col].astype(bool)
+    df.loc[ind, 'wrong'] = ~df.loc[ind, response_col].astype(bool)
     df.loc[ind, 'high'] = conf
     df.loc[ind, 'low'] = ~conf
     return df
