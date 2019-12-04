@@ -1,6 +1,6 @@
 # Circle game, a Metacognitive Task
 
-This is a beta version of an experiment equivalent to the one used by [Salles et al] (http://www.sciencedirect.com/science/article/pii/S0885201416301538).
+This is a beta version of an experiment equivalent to the one used by [Salles et al](http://www.sciencedirect.com/science/article/pii/S0885201416301538).
 The circle game consists of:
 The type I task, a perceptual task which consists in identifying the largest among 9 black circles of varying size. Followed by,
 the type II task which involves a conﬁdence judgment produced by the participants.
