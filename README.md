@@ -14,7 +14,7 @@ We have made this modification to the original version in order to achieve a mor
 
 ## Installation
 
-In order to use this task you must have the PsychoPy (a platform-independent experimental control system written in the Python interpreted language which uses entirely free libraries) already installed. If you don't have it please go to the [installation page] (http://www.psychopy.org/installation.html) and follow the instructions.
+In order to use this task you must have the PsychoPy (a platform-independent experimental control system written in the Python interpreted language which uses entirely free libraries) already installed. If you don't have it please go to the [installation page](http://www.psychopy.org/installation.html) and follow the instructions.
 
 First, you have to download this repository and unzip it some where on your pc.
 You can also clone this repo, if you find that useful.
